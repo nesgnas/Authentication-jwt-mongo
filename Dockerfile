@@ -11,5 +11,7 @@ RUN go mod download
 
 RUN go build -o bin .
 
+EXPOSE 9000
+
 ENTRYPOINT ["/jwt/bin"]
 
